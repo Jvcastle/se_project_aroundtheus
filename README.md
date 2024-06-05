@@ -1,21 +1,24 @@
 # Project 3: Around The U.S.
 
-### Overview  
+This is the third project for the Software Engineering program at TripleTen. This project was created by utilizing Figma. This allowed me to pull the required images and find the corect mark-ups for the layout.
 
-* Intro  
-* Figma  
-* Images  
-  
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)  
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+## Introduction
+
+The main focus of this project was for us to build a responive website that would work across multiple screen sizes. It depicts the many places traveled by the explorer, Jacques Cousteau.
+
+## Project features
+
+- Flexbox and Grid displays
+- Responsive layout across multiple screen sizes
+- The integration of @media rules
+- A review of previously learned css styles and html structure
+- Implementing fonts
+
+## Plan on improving the project
+
+This project was quite challenging for me personally. I didn't realize how much I depended on the brief and videos to help with layouts. Being able to comb through discord and finding other students with similar issues and the related fixes is a great resource.
+
+## Links
+
+Please find a link to the project via Github below.
+https://jvcastle.github.io/se_project_aroundtheus/
