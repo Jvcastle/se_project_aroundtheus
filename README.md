@@ -20,5 +20,7 @@ This project was quite challenging for me personally. I didn't realize how much 
 
 ## Links
 
-Please find a link to the project via Github below.
+Please find a link to the project via Github below. This will also include a link to a breif video overview of the project.
 https://jvcastle.github.io/se_project_aroundtheus/
+
+https://drive.google.com/file/d/1VSBJ1CWid4pnhD8NnAblnn3H9YSX27mi/view?usp=sharing
