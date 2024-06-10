@@ -27,3 +27,22 @@
     max-width: calc(100% - 40px);
   }
 }
+
+@media screen and (max-width: 320px) {
+  .header {
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: #545454;
+  }
+}

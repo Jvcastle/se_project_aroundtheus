@@ -22,6 +22,9 @@
   width: 24px;
   grid-area: button;
   border: 1px white solid;
+  white-space: nowrap;
+  margin-left: auto;
+  align-self: center;
 }
 
 .profile__add-button:hover {
@@ -111,7 +114,6 @@
     font-size: 14px;
     line-height: 16.94px;
     max-width: 282;
-    padding-top: 14px;
   }
 
   .profile__edit-button {
@@ -129,5 +131,22 @@
   .profile__image {
     margin: 0;
     min-width: auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile__image {
+    margin-bottom: 10px;
+  }
+
+  .profile__edit-button {
+    white-space: nowrap;
+    margin-left: auto;
+    align-self: center;
   }
 }
