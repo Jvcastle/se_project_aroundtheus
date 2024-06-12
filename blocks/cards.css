@@ -12,9 +12,8 @@
   margin: 0;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 644px) {
   .cards {
-    margin-top: 36px;
-    padding: 10px;
+    padding-top: 36px;
   }
 }
