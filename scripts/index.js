@@ -38,3 +38,6 @@ profileEditButton.addEventListener("click", () => {
 function closePopup() {
   profileEditModal.classList.remove("modal_opened");
 }
+function closePopup() {
+  profileEditModal.classList.remove("modal_opened");
+}
