@@ -114,11 +114,11 @@
       </footer>
     </div>
 
-    <div class="modal" id="profile-edit-modal">
+    <div class="modal">
       <div class="modal__container">
-        <button class="modal__close"></button>\
-        <p class="modal__header">Edit Profile</p>
         <form class="modal__form">
+          <button class="modal__close"></button>
+          <p class="modal__header">Edit Profile</p>
           <input
             class="modal__input"
             id="profile-name-input"
@@ -135,6 +135,37 @@
         </form>
       </div>
     </div>
+
+    <div class="add-modal">
+      <div class="add-modal__container">
+        <form class="add-modal__form">
+          <button class="add-modal__close"></button>
+          <p class="add-modal__header">New place</p>
+          <input
+            type="text"
+            class="add-modal__input"
+            id="add-modal__title"
+            placeholder="Title"
+          />
+          <input
+            type="text"
+            class="add-modal__input"
+            id="add-modal__image"
+            placeholder="Image Link"
+          />
+          <button class="add-modal__button">Create</button>
+        </form>
+      </div>
+    </div>
+
+    <template class="card-template">
+      <li class="card">
+        <img class="card__image" src="" alt="" />
+        <div class="card__description">
+          <h2 class="card__header"></h2>
+          <button class="card__like-button" type="button"></button>
+        </div></li
+    ></template>
 
     <script src="./scripts/index.js"></script>
   </body>
