@@ -149,7 +149,7 @@
   left: calc(100% - 5px);
 }
 
-/* styles for small to large smartphones */
+/* small to large smartphones */
 @media screen and (max-width: 400px) and (min-width: 320px) {
   .modal__container {
     width: 282px;
