@@ -52,6 +52,7 @@ const imagePreviewModalClose =
   imagePreviewModal.querySelector("#modal-image-close");
 const modalImage = imagePreviewModal.querySelector(".modal__image-preview");
 const modalTitle = imagePreviewModal.querySelector(".modal__image-title");
+const closeButtons = document.querySelectorAll(".modal__close");
 
 /* Functions */
 function openModal(modal) {
@@ -72,15 +73,15 @@ function getCardElement(data) {
   const cardElement = cardTemplate.cloneNode(true);
   const cardImageElement = cardElement.querySelector(".card__image");
   const cardTitleElement = cardElement.querySelector(".card__title");
-  cardImageElement.src = data.link;
-  cardImageElement.alt = data.name;
-  cardTitleElement.textContent = data.name;
-
-  // find the like button. when clicked, set to active
   const likeButton = cardElement.querySelector(".card__like-button");
+
   likeButton.addEventListener("click", () => {
     likeButton.classList.toggle("card__like-button_active");
   });
+
+  cardImageElement.src = data.link;
+  cardImageElement.alt = data.name;
+  cardTitleElement.textContent = data.name;
 
   // find delete button, click eventListener and .remove method
   const deleteButton = cardElement.querySelector(".card__delete-button");
@@ -125,7 +126,7 @@ function handleAddardFormSubmit(evt) {
   evt.preventDefault();
   const name = cardTitleInput.value;
   const link = cardLinkInput.value;
-  const cardElement = getCardElement({
+  const cardElement = renderCard({
     name,
     link,
   });
@@ -135,12 +136,14 @@ function handleAddardFormSubmit(evt) {
   evt.target.reset();
 }
 
+closeButtons.forEach((button) => {
+  const popup = button.closest(".modal");
+
+  button.addEventListener("click", () => closePopup(popup));
+});
+
 /* Event Listeners */
 profileEditBtn.addEventListener("click", fillProfileForm);
-
-profileEditModalClose.addEventListener("click", () =>
-  closePopup(profileEditModal)
-);
 
 profileEditForm.addEventListener("submit", handleProfileFormSubmit);
 
