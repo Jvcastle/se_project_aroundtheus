@@ -130,6 +130,9 @@ function handleAddardFormSubmit(evt) {
     name,
     link,
   });
+
+  closePopup(cardModal);
+  evt.target.reset();
 }
 
 closeButtons.forEach((button) => {
