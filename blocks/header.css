@@ -9,7 +9,6 @@
   height: 33px;
 }
 
-/* large smartphones */
 @media screen and (max-width: 600px) and (min-width: 320px) {
   .header {
     margin: 0 auto;
